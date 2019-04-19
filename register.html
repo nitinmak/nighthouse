@@ -1,0 +1,80 @@
+<!-- We don't need a full layout in this file because this page will be parsed with Ajax. -->
+
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+            <!-- <a href="#" class="back link"> -->
+                <!-- <i class="icon icon-back"></i> -->
+                <!-- <span>Back</span> -->
+            <!-- </a> -->
+        </div>
+        <div class="center sliding">About</div>
+        <div class="right">
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="register" class="page">
+        <div class="page-content" style="background: blue;">
+            <div class="content-block">
+                
+               <div class="background theme-header" ></div>
+                <div class="row mx-0 h-100 justify-content-center">
+                    <div class="col-10 col-md-6 col-lg-4 my-3 mx-auto text-center align-self-center">
+                        <img src="img/logo-w.png" alt="" class="login-logo">
+                        <br>
+                        <br>
+                        <h5 class="text-white mb-4">Register with us</h5>
+                        <br>
+                        <form id="register_form" method="post">
+
+                        <div class="login-input-content ">
+                            <div class="form-group">
+                            <input type="text"  name="name" id="name" class="form-control rounded text-center"  onkeypress="return ((event.charCode >= 65 &amp;&amp; event.charCode <= 90) || (event.charCode >= 97 &amp;&amp; event.charCode <= 122) || (event.charCode == 32))" placeholder="Select a Username">
+                                
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" onchange="check_email_exist();" class="form-control rounded text-center" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                
+                                <input  type="tel" class="form-control rounded text-center" min="0" name="mobile" id="phone" minlength="10" maxlength="10" placeholder="Enter a Phone">
+                               
+                            </div>
+                            <div class="form-group">
+                            <input class="form-control rounded text-center" type="password" name="password" id="password" onchange="check_repass();" placeholder=" Password">
+                                
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="re_pass" id="re_pass" class="form-control rounded text-center" onchange="check_repass();" placeholder="Confirm  Password">
+
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="Refferal" id="Refferal" placeholder="Refferal" class="form-control rounded text-center">
+                               
+                            </div>
+<input type="hidden" value="virus" name="secrete"  >
+
+                          <input type="submit" name="" id="register_user" class="btn btn-block btn-success rounded border-0 z-3" value="Sign UP">
+                        </div>
+                        <br>
+                        <br>
+                         <div class="snackbar">Some text some message..</div>
+                        <div class="row no-gutters">
+                            <!-- <a href="index.html" id="log">Login</a> -->
+                            <div class="col-12 text-center text-white">Already have account?<br>Please <a href="index.html" id="login" class="text-white font-weight-bold mt-3">Sign In</a> here.</div>
+                        </div>                        
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    
+
+         
+</script>
